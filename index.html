@@ -1,119 +1,167 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Looks calm—until the night tells another story 🌙</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #ffffff;
-            padding: 20px;
-        }
-        .video-title {
-            font-size: 1em;
-            font-weight: bold;
-            margin-bottom: 18px;
-            letter-spacing: 1px;
-            color: black;
-        }
-        .video-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 720px;
-            margin: 0 auto;
-        }
-        video {
-            width: 100%;
-            max-width: 100%;
-            border-radius: 10px;
-            display: block;
-        }
-        .ad-banner-inside {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 320px;
-            height: 50px;
-            background: rgba(255,255,255,0.92);
-            border-radius: 10px 10px 0 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-            overflow: hidden;
-        }
-        @media (max-width: 400px) {
-            .ad-banner-inside {
-                width: 95vw;
-                height: 40px;
-                font-size: 0.85em;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="video-title">Looks calm—until the night tells another story 🌙<span aria-label="smile" role="img"></span></div>
-    <center><style type="text/css">
-  .mobileShow {display: none;}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  /* Smartphone Portrait and Landscape */
-  @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 480px){ 
-      .mobileShow {display: inline;}
-  }
-  .mobileHide { display: inline; }
+<title>WATCH VIDEO</title>
 
-  /* Smartphone Portrait and Landscape */
-  @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 480px){
-     .mobileHide { display: none;}
+<style>
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  padding:15px;
+}
+
+.container{
+  width:100%;
+  max-width:360px;
+  background:rgba(255,255,255,0.95);
+  padding:28px 22px;
+  border-radius:16px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.25);
+  text-align:center;
+  backdrop-filter:blur(6px);
+}
+
+/* Button utama */
+.download-btn{
+  display:block;
+  width:100%;
+  padding:16px;
+  margin:15px 0;
+  text-decoration:none;
+
+  font-size:16px;
+  font-weight:bold;
+  letter-spacing:1px;
+  color:#fff;
+
+  background:linear-gradient(135deg,#000,#24292e,#000);
+  border-radius:10px;
+
+  position:relative;
+  overflow:hidden;
+
+  transition:all .3s ease;
+}
+
+/* Hover */
+.download-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 0 20px rgba(0,255,255,0.5);
+}
+
+/* Click */
+.download-btn:active{
+  transform:scale(0.95);
+}
+
+/* Glow animation */
+.download-btn::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(0,255,255,.5),
+    transparent
+  );
+
+  animation:glow 2s infinite;
+}
+
+.download-btn::after{
+  content:"";
+}
+
+.arrow-left,
+.arrow-right{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:18px;
+  opacity:.8;
+
+  animation:arrow 1.2s infinite ease-in-out;
+}
+
+.arrow-left{
+  left:15px;
+}
+
+.arrow-right{
+  right:15px;
+  animation-delay:.6s;
+}
+
+@keyframes glow{
+  0%{left:-100%;}
+  100%{left:100%;}
+}
+
+@keyframes arrow{
+  0%{
+    opacity:.3;
+    transform:translateY(-50%) scale(.8);
   }
+  50%{
+    opacity:1;
+    transform:translateY(-50%) scale(1.3);
+  }
+  100%{
+    opacity:.3;
+    transform:translateY(-50%) scale(.8);
+  }
+}
+
+@media(max-width:480px){
+
+  .container{
+    padding:22px 18px;
+  }
+
+  .download-btn{
+    font-size:15px;
+    padding:14px;
+  }
+
+}
+
 </style>
+</head>
 
-     <div class="mobileShow">
-<center><script type="text/javascript">
-  atOptions = {
-  	'key' : '4334ac5043f7960099c7258c2b6ef77f',
-  	'format' : 'iframe',
-  	'height' : 90,
-  	'width' : 728,
-  	'params' : {}
-  };
-</script>
-<script
-  type="text/javascript"
-  src="//hedwigmonday.com/4334ac5043f7960099c7258c2b6ef77f/invoke.js"
-></script></center></div>
-<div class="mobileHide"><center><script type="text/javascript">
-  atOptions = {
-  	'key' : '6281d2b8e30aa76c7faaf58575a2465d',
-  	'format' : 'iframe',
-  	'height' : 50,
-  	'width' : 320,
-  	'params' : {}
-  };
-</script>
-<script
-  type="text/javascript"
-  src="//hedwigmonday.com/6281d2b8e30aa76c7faaf58575a2465d/invoke.js"
-></script></center></div>
-	<br>
-    <div class="video-wrapper">
-        <video autoplay loop playsinline controls poster="https://cdn.aceimg.com/ac19acf36.jpg">
-            <source src="https://cdn.aceimg.com/eb8587dfc.mp4" type="video/mp4">
-        </video><center>
-		<div style="text-align: center; margin: 30px 0;">
-  <a href="https://otieu.com/4/9786065" style="display: inline-flex; align-items: center; gap: 10px; background-color: #000000; color: white; font-size: 20px; font-weight: bold; padding: 16px 28px; border-radius: 8px; text-decoration: none; box-shadow: 0 0 15px rgba(255 255 255 / 80%); animation: blink 1.5s infinite;">▶︎ Full HD Video
+<body>
+
+<div class="container">
+
+  <a href="https://xnvidshub.github.io/eb8587dfc.mp4/" class="download-btn">
+
+    <span class="arrow-left">▶</span>
+
+    WATCH NOW
+
+    <span class="arrow-right">◀</span>
+
   </a>
+
 </div>
-  <a href="https://otieu.com/4/9786065" style="display: inline-flex; align-items: center; gap: 10px; background-color: #000000; color: white; font-size: 20px; font-weight: bold; padding: 16px 28px; border-radius: 8px; text-decoration: none; box-shadow: 0 0 15px rgba(255 255 255 / 80%); animation: blink 1.5s infinite;">▶︎ More Videos
-  </a>
+
 </body>
 </html>
